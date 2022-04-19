@@ -42,14 +42,14 @@ export class Policy {
   }
 
   static findById(id: u32): Policy {
-    //near view $CONTRACT getById '{"id":SOME_ID_HERE}' --accountId
+    //near view $CONTRACT getById '{"id":SOME_ID_HERE}'
 
     // Lookup a Policy in the PersistentUnorderedMap by its id.
     return insurancePolicies.getSome(id);
   }
 
   static getPolicies(offset: u32, limit: u32): Policy[] {
-    //near view $CONTRACT get '{"offset":0}' --accountId 
+    //near view $CONTRACT get '{"offset":0}' 
 
     // We'll start at the offset (skipping all policies before the offset)
     // and collect all policies until we reach the offset + limit 
