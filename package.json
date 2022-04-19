@@ -1,0 +1,26 @@
+{
+    "name": "insurance",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./build/release.js",
+            "types": "./build/release.d.ts"
+        }
+    },
+    "scripts": {
+        "build:release": "asb",
+        "deploy": "near dev-deploy build/release/insurance.wasm",
+        "dev": "yarn build:release && yarn deploy",
+        "test": "asp",
+        "asbuild:debug": "asc assembly/index.ts --target debug",
+        "asbuild:release": "asc assembly/index.ts --target release",
+        "asbuild": "yarn asbuild:debug && yarn asbuild:release",
+        "start": "npx serve ."
+    },
+    "devDependencies": {
+        "assemblyscript": "^0.20.4"
+    }
+}
