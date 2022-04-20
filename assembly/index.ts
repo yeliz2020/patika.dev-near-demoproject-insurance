@@ -3,7 +3,7 @@ import { Policy} from "./model";
 
 
 export function create(policyType: string): Policy {
-  return Policy.creatPolicy(policyType);
+  return Policy.createPolicy(policyType);
 }
 
 export function getById(id: u32): Policy {

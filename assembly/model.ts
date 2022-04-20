@@ -29,8 +29,9 @@ export class Policy {
     this.premium = context.attachedDeposit >= TW0_NEAR;
     this.limitsOfLiability = TEN_NEAR;
   }
-
-  static creatPolicy(policyType: string): Policy {
+//yarn build:release
+//yarn deploy
+  static createPolicy(policyType: string): Policy {
     // create a new Policy
     //near call $CONTRACT create '{"policyType":"Health"}' --accountId yeliz2.testnet   *premium false*
     //near call $CONTRACT create '{"policyType":"Car"}' --accountId yeliz.testnet --amount 2   *premium true*
@@ -90,7 +91,7 @@ export class Policy {
   }
   static activateInsurancePolicy(id: u32): Policy {
     //near call $CONTRACT activate '{"id":1435075657 }' --accountId yeliz2.testnet   *not activated*
-    //near call $CONTRACT activate '{"id":1435075657 }' --accountId yeliz.testnet --amount 2 *activated*
+    //near call $CONTRACT activate '{"id":1435075657 }' --accountId yeliz2.testnet --amount 2 *activated*
     
 
     // We will activate the policy by paying the premium
