@@ -107,7 +107,8 @@ With cancel function, the policy can be canceled. Cancellation can only be made 
 ```code
 near call $CONTRACT cancel '{"id":1435075657}' --accountId yeliz.testnet
 ```
-<img width="1212" alt="OwnerError" src="https://user-images.githubusercontent.com/69525712/164080477-d9ba058f-6371-4202-ae5f-48088b19719d.png">
+
+<img width="1214" alt="cancelError" src="https://user-images.githubusercontent.com/69525712/164172334-b61e6bd3-5222-4d33-b68c-98cb58d7fc35.png">
 
 #### cancel successful
 ```code
