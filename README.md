@@ -4,10 +4,10 @@ This repo is a demo of Near Smart Contract with assemblyscript, about the insura
 ## Usage
 ### Prerequisites:
 1. npm
-2. Near-cli
-3. Current version of Node.js
-4. yarn: npm install --global yarn (or just npm i -g yarn)
-5. You need near-cli installed globally. Here's how:
+2. Current version of Node.js
+3. yarn <br>
+to install:  npm install --global yarn (or just npm i -g yarn)
+4. You need near-cli installed globally. Here's how:<br>
 npm install --global near-cli
 This will give you the near CLI tool. Ensure that it's installed with:
 near --version
@@ -18,7 +18,7 @@ near --version
 3. yarn build:release
 4. yarn deploy
  
-Copy your Contract id
+Copy your Contract id, contract id looks like this dev-1650389272801-16471964066557
 
 Export it so you do not have to copy and paste it while calling contract methods: 
 
@@ -107,7 +107,8 @@ With cancel function, the policy can be canceled. Cancellation can only be made 
 ```code
 near call $CONTRACT cancel '{"id":1435075657}' --accountId yeliz.testnet
 ```
-<img width="1212" alt="OwnerError" src="https://user-images.githubusercontent.com/69525712/164080477-d9ba058f-6371-4202-ae5f-48088b19719d.png">
+
+<img width="1214" alt="cancelError" src="https://user-images.githubusercontent.com/69525712/164172334-b61e6bd3-5222-4d33-b68c-98cb58d7fc35.png">
 
 #### cancel successful
 ```code
