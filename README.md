@@ -14,9 +14,12 @@ near --version
 
 ### Getting started
 1. Clone this repo to a local folder
-2. run yarn (This will install the dependencies so that we won’t have a problem related to that.)
-3. yarn build:release
-4. yarn deploy
+2. cd patika.dev-near-demoproject-insurance
+3. yarn init -y
+4. yarn add @assemblyscript/loader@latest assemblyscript@latest asbuild near-cli near-sdk-as
+5. yarn asinit .
+6. yarn build:release
+7. yarn deploy
  
 Copy your Contract id, contract id looks like this dev-1650389272801-16471964066557
 
