@@ -22,5 +22,7 @@
     },
     "devDependencies": {
         "assemblyscript": "^0.20.4"
-    }
+    },
+    "repository": "https://github.com/yeliz2020/patika.dev-near-demoproject-insurance.git",
+    "author": "Yeliz İşler <yeliz.isler@gmail.com>"
 }
