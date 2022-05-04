@@ -1,6 +1,14 @@
 # patika.dev-near-demoproject-insurance
+<div align="center">
+ <img src="https://near.org/wp-content/uploads/2021/09/brand-stack-300x300.png" width=30%/>
 
+</div>
+https://www.loom.com/share/b78b990a193849a8bc7f25969df0f94c
+<br><br>
 This repo is a demo of Near Smart Contract with assemblyscript, about the insurance policy.
+
+
+ 
 ## Usage
 ### Prerequisites:
 1. npm
@@ -14,9 +22,12 @@ near --version
 
 ### Getting started
 1. Clone this repo to a local folder
-2. run yarn (This will install the dependencies so that we won’t have a problem related to that.)
-3. yarn build:release
-4. yarn deploy
+2. cd patika.dev-near-demoproject-insurance
+3. yarn init -y
+4. yarn add @assemblyscript/loader@latest assemblyscript@latest asbuild near-cli near-sdk-as
+5. yarn asinit .
+6. yarn build:release
+7. yarn deploy
  
 Copy your Contract id, contract id looks like this dev-1650389272801-16471964066557
 
